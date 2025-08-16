@@ -36,7 +36,7 @@ async def on_message(message):
         }
 
         payload = {
-            "model": "google/gemini-2.5-pro",  # Model gratis dari OpenRouter
+            "model": "openai/gpt-oss-20b:free",  # Model gratis dari OpenRouter
             "messages": [
                 {"role": "user", "content": user_input}
             ]

@@ -36,7 +36,7 @@ async def on_message(message):
         }
 
         payload = {
-            "model": "meta-llama/llama-3.3-8b-instruct:free",  # Model gratis dari OpenRouter
+            "model": "google/gemini-2.5-pro",  # Model gratis dari OpenRouter
             "messages": [
                 {"role": "user", "content": user_input}
             ]

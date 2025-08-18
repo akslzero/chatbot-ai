@@ -22,10 +22,10 @@ async def on_message(message):
     if message.author.bot:
         return
 
-    if message.content.startswith("!tanya"):
-        user_input = message.content.replace("!tanya", "").strip()
+    if message.content.startswith("!"):
+        user_input = message.content.replace("!", "").strip()
 
-        await message.channel.send("🤖 Tunggu bentar ya Bang, mikir dulu...")
+        await message.channel.send("Sedang memproses pertanyaanmu...")
 
         headers = {
             "Authorization": f"Bearer {OPENROUTER_API_KEY}",

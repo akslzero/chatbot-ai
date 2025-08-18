@@ -36,7 +36,7 @@ async def on_message(message):
         }
 
         payload = {
-            "model": "openai/gpt-oss-20b:free",  # Model gratis dari OpenRouter
+            "model": "deepseek/deepseek-chat-v3-0324:free",  # Model gratis dari OpenRouter
             "messages": [
                 {"role": "user", "content": user_input}
             ]
